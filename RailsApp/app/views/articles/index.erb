@@ -1,0 +1,36 @@
+<h1>test</h1>
+
+
+<table>
+  <tr>
+    <th>
+      タイトル
+    </th>
+    <th>
+      内容
+    </th>
+    <th>
+      更新日
+    </th>
+  </tr>
+  <% @article.each do |article| %>
+    <tr>
+      <td>
+        <%= article.name %>
+      </td>
+      <td>
+        <%= article.content %>
+        <% if article.comments.present? %>
+            <br />コメント:
+            <% article.comments.each do |comment| %>
+                <br /><%= comment.content %>
+            <% end %>
+        <% end %>
+      </td>
+      <td>
+        <%= article.updated_at %>
+      </td>
+
+    </tr>
+  <% end%>
+</table>

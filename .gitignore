@@ -1,0 +1,10 @@
+.idea
+*/.idea
+/RailsApp/.bundle
+/RailsApp/vendor/*
+/RailsApp/tmp/*
+/RailsApp/log/*
+!/log/.keep
+/CakePHPApp/vendor/*
+/CakePHPApp/tmp/*
+/CakePHPApp/logs/*
